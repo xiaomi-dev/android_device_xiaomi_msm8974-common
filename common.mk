@@ -221,6 +221,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gps.msm8974
 
+# Camera
+PRODUCT_PACKAGES += \
+    camera.msm8974
+
 # Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8974 \
