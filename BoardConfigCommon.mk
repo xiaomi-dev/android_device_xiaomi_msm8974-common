@@ -45,6 +45,7 @@ ifeq ($(TARGET_BUILD_VARIANT),eng)
 else
     TARGET_KERNEL_CONFIG := cancro_user_defconfig
 endif
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # Flags
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DQCOM_BSP -DQTI_BSP
