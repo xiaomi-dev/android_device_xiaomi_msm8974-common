@@ -270,9 +270,9 @@ service imsdatadaemon /system/bin/imsdatadaemon
     disabled
 
 service wcnss-service /system/bin/wcnss_service
-    class late_start
+    class main
     user system
-    group system wifi
+    group system wifi radio
     oneshot
 
 service sysmatsir /system/bin/smonsir
