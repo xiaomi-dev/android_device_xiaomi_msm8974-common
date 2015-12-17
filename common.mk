@@ -198,7 +198,7 @@ PRODUCT_PACKAGES += \
     mount.exfat \
     fsck.exfat \
     mkfs.exfat \
-    mkfs.f2fs \
+    make_f2fs \
     fsck.f2fs \
     fibmap.f2fs \
     ntfsfix \
@@ -208,7 +208,12 @@ PRODUCT_PACKAGES += \
     resize2fs \
     e2fsck_static \
     mke2fs_static \
-    resize2fs_static
+    resize2fs_static \
+    mkfs.f2fs \
+    libntfs-3g \
+    mount.ntfs \
+    make_ntfs \
+    mkfs.ntfs
 
 # Extra tools
 PRODUCT_PACKAGES += \
