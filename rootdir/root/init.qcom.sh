@@ -83,11 +83,11 @@ start_charger_monitor()
 		chown -h root.system /sys/class/power_supply/battery/input_current_trim
 		chown -h root.system /sys/class/power_supply/battery/input_current_settled
 		chown -h root.system /sys/class/power_supply/battery/voltage_min
-		chmod -h 0664 /sys/class/power_supply/battery/input_current_max
-		chmod -h 0664 /sys/class/power_supply/battery/input_current_trim
-		chmod -h 0664 /sys/class/power_supply/battery/input_current_settled
-		chmod -h 0664 /sys/class/power_supply/battery/voltage_min
-		chmod -h 0664 /sys/module/qpnp_charger/parameters/charger_monitor
+		chmod  0664 /sys/class/power_supply/battery/input_current_max
+		chmod  0664 /sys/class/power_supply/battery/input_current_trim
+		chmod  0664 /sys/class/power_supply/battery/input_current_settled
+		chmod  0664 /sys/class/power_supply/battery/voltage_min
+		chmod  0664 /sys/module/qpnp_charger/parameters/charger_monitor
 		start charger_monitor
 	fi
 }
